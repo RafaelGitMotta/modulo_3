@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/**/
+/* Configurações Gerais*/
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+/*Configurações em comun do html e do body*/
+
+html, body {
+    min-height: 100vh;/*tamanho minimo da Viewport Height, 'vh' representa uma porcentagem da altura do viewport( Viewport é área visível da tela pelo usuário em dispositivo, e varia de acordo com o dispositivo de acesso.)*/
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 50px;
+    /*text-transform: uppercase; tranforma toda as letras em maiúsculas*/
+    font-variant: small-caps;/*tranforma toda as letras em maiúsculas com a primeira letra maior.*/
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+/* a {} pode se assim também*/ 
+header a , footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+/* a:hover {} pode se assim também*/ 
+header a:hover, footer a:hover {
+    text-decoration: underline;
+} 
+/* Configurações gerais para todas as section*/
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+    
+
+/* Configurações das sections de id=normal*/
+section.normal {
+    background-color: white;
+    color: black;
+}
+/* Configurações das sections de id=imagem*/
+section.imagem {
+    background-color: rgb(51, 49, 49);
+    color: white;
+}
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
