@@ -1,4 +1,15 @@
 @charset "UTF-8";
+
+/*Fonte importada do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Passero+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:"Passero One", sans-serif;;
+    --fonte3: "Sriracha", cursive;
+}
 /**/
 /* Configurações Gerais*/
 * {
@@ -7,9 +18,11 @@
   }
 /*Configurações em comun do html e do body*/
 
+/*tamanho minimo da Viewport Height, 'vh' representa uma porcentagem da altura do viewport( Viewport é área visível da tela pelo usuário em dispositivo, e varia de acordo com o dispositivo de acesso.)*/
 html, body {
-    min-height: 100vh;/*tamanho minimo da Viewport Height, 'vh' representa uma porcentagem da altura do viewport( Viewport é área visível da tela pelo usuário em dispositivo, e varia de acordo com o dispositivo de acesso.)*/
+    min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -21,6 +34,8 @@ header > h1 {
     padding-top: 50px;
     /*text-transform: uppercase; tranforma toda as letras em maiúsculas*/
     font-variant: small-caps;/*tranforma toda as letras em maiúsculas com a primeira letra maior.*/
+    font-family: var(--fonte2);
+    font-size: 3em;
 }
 
 header > p {
@@ -43,6 +58,7 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
 }
     
 
@@ -57,7 +73,8 @@ section.imagem {
     color: white;
 }
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
